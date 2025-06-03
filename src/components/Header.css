@@ -20,11 +20,12 @@
     font-size: 24px;
     font-weight: 600;
     margin-left: 16px;
+    display: flex;
+    align-items: center;
 }
 
 .header-search {
     display: flex;
-    align-items: center;
     margin-left: 16px;
     justify-content: space-around;
 }
