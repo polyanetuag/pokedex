@@ -21,10 +21,11 @@
 }
 
 .card-list-details-img {
-    width: 72px;
-    height: 72px;
+    max-width: 72px;
+    max-height: 72px;
     margin: auto;
     z-index: 1;
+    object-fit: contain;
 }
 
 .card-list-details-name {
