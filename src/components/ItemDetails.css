@@ -1,0 +1,25 @@
+.item-container {
+    height: 100vh;
+    color: white;  
+    
+}
+
+.item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.item-title {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.item-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
