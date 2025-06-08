@@ -29,10 +29,14 @@ export function ItemDetails() {
         <div className="item-header">
           <ArrowBack />
           <h1 className="item-title">{pokemon.name}</h1>
-          <h2>{pokemon.id}</h2>
+          <h2>{`#${pokemon.id}`}</h2>
         </div>
         <div className="item-img">
-          <img src={pokemon.sprites.front_default} alt="" />
+          <img
+            width="100%"
+            src={pokemon.sprites?.other["official-artwork"].front_default}
+            alt=""
+          />
         </div>
       </div>
     )
