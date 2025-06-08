@@ -2,6 +2,8 @@
     background: #DC0A2D;
     height: 110px;
     color: white;
+    width: 360px;
+    margin: 0 auto;
 }
 
 .header-content {
