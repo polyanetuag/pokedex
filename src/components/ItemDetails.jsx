@@ -1,13 +1,17 @@
 import { useEffect, useState } from "react";
 import "./ItemDetails.css";
 
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { ArrowBack } from "../icons/ArrowBack";
 
 export function ItemDetails() {
   const params = useParams();
   console.log("params", params);
   const [pokemon, setPokemon] = useState(null);
+
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
 
   useEffect(() => {
     const pokemonDetailsData = async () => {
@@ -27,8 +31,10 @@ export function ItemDetails() {
     pokemon && (
       <div className="item-container">
         <div className="item-header">
-          <ArrowBack />
-          <h1 className="item-title">{pokemon.name}</h1>
+          <Link to="/">
+            <ArrowBack />
+          </Link>
+          <h1 className="item-title">{capitalizeFirstLetter(pokemon.name)}</h1>
           <h2>{`#${pokemon.id}`}</h2>
         </div>
         <div className="item-img">
@@ -37,6 +43,9 @@ export function ItemDetails() {
             src={pokemon.sprites?.other["official-artwork"].front_default}
             alt=""
           />
+        </div>
+        <div className="item-info">
+          <h1>test</h1>
         </div>
       </div>
     )
