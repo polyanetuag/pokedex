@@ -3,6 +3,7 @@ import "./ItemDetails.css";
 
 import { Link, useParams } from "react-router";
 import { ArrowBack } from "../icons/ArrowBack";
+import { theme } from "../theme";
 
 export function ItemDetails() {
   const params = useParams();
@@ -27,15 +28,28 @@ export function ItemDetails() {
     pokemonDetailsData();
   }, []);
 
+  const typeNames = pokemon?.types?.map((item) => item.type.name);
+
+  const firstType = pokemon?.types?.[0].type?.name;
+  console.log("firstType", firstType);
+
+  const backgroundDinamic = theme.type[firstType];
+
   return (
     pokemon && (
-      <div className="item-container">
+      <div className="item-container" style={{ background: backgroundDinamic }}>
         <div className="item-header">
           <Link to="/">
             <ArrowBack />
           </Link>
           <h1 className="item-title">{capitalizeFirstLetter(pokemon.name)}</h1>
           <h2>{`#${pokemon.id}`}</h2>
+
+          <img
+            className="item-background"
+            src="/src/assets/pokeball2.svg"
+            alt="pokeball"
+          />
         </div>
         <div className="item-img">
           <img
@@ -45,7 +59,17 @@ export function ItemDetails() {
           />
         </div>
         <div className="item-info">
-          <h1>test</h1>
+          <div className="item-type">{typeNames}</div>
+          <h1>About</h1>
+          <section>
+            <div>peso | height | moves</div>
+            <p>description</p>
+          </section>
+
+          <section>
+            <div>Base Stats</div>
+            <p>ranges</p>
+          </section>
         </div>
       </div>
     )
