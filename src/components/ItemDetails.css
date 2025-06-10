@@ -3,10 +3,6 @@
     color: white;  
     width: 360px;
     margin: 0 auto;
-    background-color: antiquewhite;
-    background-image: url("/src/assets/pokeball.svg");
-    background-repeat: no-repeat;
-    background-position: right top;
 }
 
 .item-header {
@@ -14,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    /* background-color: rgb(105, 105, 105); */
+    position: relative;
 }
 
 .item-title {
@@ -23,12 +19,21 @@
     
 }
 
+.item-background {
+    position: absolute;
+    top: 9px;
+    right: 6px;
+    width: 200px;
+    border-radius: 50%;
+}
+
 .item-img {
     width: 200px;
     height: 100px;
     object-fit: cover;
     border-radius: 8px;
     margin: 0 auto;
+    position: relative;
 }
 
 .item-info {
@@ -42,4 +47,11 @@
     background: white;
     color: var( --grayscale-dark);
 
+}
+
+.item-type {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 45px;
 }
