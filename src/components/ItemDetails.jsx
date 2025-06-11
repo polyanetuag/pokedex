@@ -30,6 +30,11 @@ export function ItemDetails() {
 
   const typeNames = pokemon?.types?.map((item) => item.type.name);
 
+  console.log(
+    "typeNames ::>",
+    typeNames?.map((name) => name)
+  );
+
   const firstType = pokemon?.types?.[0].type?.name;
   console.log("firstType", firstType);
 
@@ -59,8 +64,30 @@ export function ItemDetails() {
           />
         </div>
         <div className="item-info">
-          <div className="item-type">{typeNames}</div>
-          <h1>About</h1>
+          <div className="item-type">
+            {typeNames?.map((name) => (
+              <span
+                style={{
+                  background: theme.type[name],
+                  padding: "2px 8px",
+                  borderRadius: "10px",
+                  color: "white",
+                }}
+              >
+                {name}
+              </span>
+            ))}
+          </div>
+          <div>
+            <h1
+              style={{
+                color: backgroundDinamic,
+                fontSize: "14px",
+              }}
+            >
+              About
+            </h1>
+          </div>
           <section>
             <div>peso | height | moves</div>
             <p>description</p>
