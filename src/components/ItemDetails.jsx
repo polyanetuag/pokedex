@@ -4,6 +4,8 @@ import "./ItemDetails.css";
 import { Link, useParams } from "react-router";
 import { ArrowBack } from "../icons/ArrowBack";
 import { theme } from "../theme";
+import { Weight } from "../icons/Weight";
+import { Height } from "../icons/Height";
 
 export function ItemDetails() {
   const params = useParams();
@@ -29,16 +31,16 @@ export function ItemDetails() {
   }, []);
 
   const typeNames = pokemon?.types?.map((item) => item.type.name);
-
-  console.log(
-    "typeNames ::>",
-    typeNames?.map((name) => name)
-  );
+  const abilities = pokemon?.abilities?.map((ability) => ability?.name);
+  console.log("abilities", abilities);
 
   const firstType = pokemon?.types?.[0].type?.name;
-  console.log("firstType", firstType);
 
   const backgroundDinamic = theme.type[firstType];
+
+  const pokemonKg = pokemon?.weight / 10;
+
+  const pokemonParaMetros = pokemon?.height / 10;
 
   return (
     pokemon && (
@@ -88,8 +90,45 @@ export function ItemDetails() {
               About
             </h1>
           </div>
-          <section>
-            <div>peso | height | moves</div>
+          <section className="container-about">
+            <div className="about-items">
+              <div style={{ display: "flex", gap: 10 }}>
+                <Weight />
+                {pokemonKg} kg
+              </div>
+              <p
+                style={{
+                  color: "#666666",
+                }}
+              >
+                Weight
+              </p>
+            </div>
+            <div className="about-items">
+              <div style={{ display: "flex", gap: 10 }}>
+                <Height />
+                {pokemonParaMetros} m
+              </div>
+              <p
+                style={{
+                  color: "#666666",
+                }}
+              >
+                Height
+              </p>
+            </div>
+            <div className="about-items">
+              <div style={{ display: "flex", gap: 10 }}></div>
+              <p
+                style={{
+                  color: "#666666",
+                }}
+              >
+                Moves
+              </p>
+            </div>
+
+            <div> moves</div>
             <p>description</p>
           </section>
 
