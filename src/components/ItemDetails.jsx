@@ -31,7 +31,7 @@ export function ItemDetails() {
   }, []);
 
   const typeNames = pokemon?.types?.map((item) => item.type.name);
-  const abilities = pokemon?.abilities?.map((ability) => ability?.name);
+  const abilities = pokemon?.abilities?.map((ability) => ability?.ability.name);
   console.log("abilities", abilities);
 
   const firstType = pokemon?.types?.[0].type?.name;
@@ -96,39 +96,40 @@ export function ItemDetails() {
                 <Weight />
                 {pokemonKg} kg
               </div>
-              <p
-                style={{
-                  color: "#666666",
-                }}
-              >
-                Weight
-              </p>
-            </div>
-            <div className="about-items">
               <div style={{ display: "flex", gap: 10 }}>
                 <Height />
                 {pokemonParaMetros} m
               </div>
-              <p
+              <div
                 style={{
-                  color: "#666666",
+                  display: "flex",
+                  // gap: 10,
+                  flexDirection: "column",
+                  alignItems: "center",
                 }}
               >
-                Height
-              </p>
+                {abilities?.map((name) => (
+                  <span
+                    style={{
+                      // background: theme.type[name],
+
+                      color: "black",
+                    }}
+                  >
+                    {name}
+                  </span>
+                ))}
+              </div>
             </div>
-            <div className="about-items">
-              <div style={{ display: "flex", gap: 10 }}></div>
-              <p
-                style={{
-                  color: "#666666",
-                }}
-              >
-                Moves
-              </p>
+            <div className="about-item-text">
+              <p>Weight</p>
+              <p>Height</p>
+              <p>Moves</p>
             </div>
 
-            <div> moves</div>
+            {/* <div className="about-items-moves"> */}
+            {/* </div> */}
+
             <p>description</p>
           </section>
 
