@@ -64,13 +64,30 @@
 .container-about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+    gap: 20px;
+    align-items: center;
 
 }
 .about-items {
-    display: flex;
+    display: contents;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 15px;
+}
+
+.about-item-text{
+    display: contents;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 15px; */
+    color: "#666666";
+
+    & p {
+        align-items: center;
+        justify-self: center;
+        line-height: 20px;
+        color: var(--grayscale-medium);
+    }
 }
