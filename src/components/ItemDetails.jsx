@@ -11,6 +11,7 @@ export function ItemDetails() {
   const params = useParams();
   console.log("params", params);
   const [pokemon, setPokemon] = useState(null);
+  const [pokemonSpecie, setPokemonSpecie] = useState(null);
 
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -30,9 +31,26 @@ export function ItemDetails() {
     pokemonDetailsData();
   }, []);
 
+  useEffect(() => {
+    const pokemonSpecieData = async () => {
+      const response = await fetch(
+        `https://pokeapi.co/api/v2/pokemon-species/${params.id}`
+      );
+
+      const json = await response.json();
+      console.log("json>>>>>>>>>>>", json);
+
+      setPokemonSpecie(json);
+    };
+    pokemonSpecieData();
+  }, []);
+
   const typeNames = pokemon?.types?.map((item) => item.type.name);
   const abilities = pokemon?.abilities?.map((ability) => ability?.ability.name);
-  console.log("abilities", abilities);
+
+  const species = pokemonSpecie?.flavor_text_entries[10];
+
+  console.log("species", species);
 
   const firstType = pokemon?.types?.[0].type?.name;
 
@@ -126,13 +144,11 @@ export function ItemDetails() {
               <p>Height</p>
               <p>Moves</p>
             </div>
-
-            {/* <div className="about-items-moves"> */}
-            {/* </div> */}
-
-            <p>description</p>
           </section>
 
+          <div className="about-description">
+            <span>{species.flavor_text}</span>
+          </div>
           <section>
             <div>Base Stats</div>
             <p>ranges</p>
