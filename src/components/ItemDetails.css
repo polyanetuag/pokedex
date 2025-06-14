@@ -91,3 +91,9 @@
         color: var(--grayscale-medium);
     }
 }
+
+.about-description {
+    width: 100%;
+    height: 100px;
+   
+}
