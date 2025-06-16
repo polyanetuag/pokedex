@@ -29,6 +29,7 @@ export function ItemDetails() {
       setPokemon(json);
     };
     pokemonDetailsData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -43,18 +44,43 @@ export function ItemDetails() {
       setPokemonSpecie(json);
     };
     pokemonSpecieData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const firstType = pokemon?.types?.[0].type?.name;
+  const backgroundDinamic = theme.type[firstType];
   const typeNames = pokemon?.types?.map((item) => item.type.name);
   const abilities = pokemon?.abilities?.map((ability) => ability?.ability.name);
+  // aqui o array foi transformado de objeto para string
+  const stats = pokemon?.stats?.map((obj) => (
+    <div
+      style={{
+        display: "flex",
+        textTransform: "uppercase",
+        gap: "20px",
+        alignItems: "center",
+        justifyContent: "flex-end",
+      }}
+    >
+      <p
+        style={{
+          color: backgroundDinamic,
+          fontWeight: "bold",
+        }}
+      >
+        {obj?.stat.name}
+      </p>
+      <p>{obj?.base_stat}</p>
+      <div className="progress-wrapper">
+        <div
+          className="progress-bar"
+          style={{ width: obj?.base_stat, background: backgroundDinamic }}
+        />
+      </div>
+    </div>
+  ));
 
   const species = pokemonSpecie?.flavor_text_entries[10];
-
-  console.log("species", species);
-
-  const firstType = pokemon?.types?.[0].type?.name;
-
-  const backgroundDinamic = theme.type[firstType];
 
   const pokemonKg = pokemon?.weight / 10;
 
@@ -147,11 +173,27 @@ export function ItemDetails() {
           </section>
 
           <div className="about-description">
-            <span>{species.flavor_text}</span>
+            <span>{species?.flavor_text}</span>
           </div>
-          <section>
-            <div>Base Stats</div>
-            <p>ranges</p>
+          <section
+            style={{
+              alignItems: "center",
+              justifyItems: "center",
+            }}
+          >
+            <div>
+              <h1
+                style={{
+                  color: backgroundDinamic,
+                  fontSize: "14px",
+                }}
+              >
+                Base Stats
+              </h1>
+            </div>
+            <div className="stats-container">
+              <div className="stats-info">{stats}</div>
+            </div>
           </section>
         </div>
       </div>
