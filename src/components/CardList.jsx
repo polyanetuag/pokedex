@@ -16,7 +16,6 @@ export function CardList() {
   };
 
   const handleItemClick = () => {
-    console.log("Card item clicado:");
     setOpenDetails(!openDetails);
   };
 
@@ -32,7 +31,7 @@ export function CardList() {
         ))}
       </div>
 
-      {openDetails && <ItemDetails />}
+      {openDetails && <ItemDetails key={name} />}
     </section>
   );
 }
