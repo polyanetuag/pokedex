@@ -1,6 +1,6 @@
 .card-list-section {
     height: 83%;
-    width: 360px;
+    width: 350px;
     background-color: white;
     margin: 0 auto;
     border-radius: 8px;
@@ -9,7 +9,6 @@
 }
 
 .card-list {
-    align-content: baseline;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 8px;
