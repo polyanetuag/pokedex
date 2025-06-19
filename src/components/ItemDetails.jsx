@@ -9,7 +9,6 @@ import { Height } from "../icons/Height";
 
 export function ItemDetails() {
   const params = useParams();
-  console.log("params", params);
   const [pokemon, setPokemon] = useState(null);
   const [pokemonSpecie, setPokemonSpecie] = useState(null);
 
@@ -24,7 +23,6 @@ export function ItemDetails() {
       );
 
       const json = await response.json();
-      console.log("json>>>>>>>>>>>", json);
 
       setPokemon(json);
     };
@@ -39,7 +37,6 @@ export function ItemDetails() {
       );
 
       const json = await response.json();
-      console.log("json>>>>>>>>>>>", json);
 
       setPokemonSpecie(json);
     };
