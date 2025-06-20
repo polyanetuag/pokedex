@@ -61,6 +61,7 @@ export function CardList() {
           className="header-search-input"
           type="text"
           placeholder="Search"
+          disabled
         />
 
         <div className="dropdown">
@@ -78,6 +79,7 @@ export function CardList() {
                     checked={sort === "number"}
                     onChange={() => {
                       setSort("number");
+                      setOpenMenu(false);
                     }}
                   />
                   <label
@@ -93,6 +95,7 @@ export function CardList() {
                     type="radio"
                     onChange={() => {
                       setSort("name");
+                      setOpenMenu(false);
                     }}
                     checked={sort === "name"}
                   />
