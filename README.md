@@ -1,3 +1,9 @@
+<div align="center" justify-content="space-between">
+  <!-- <img width= '30' src="public/satellite.svg" />  -->
+  <h1>Pokedex
+ </h1>
+</div>
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
