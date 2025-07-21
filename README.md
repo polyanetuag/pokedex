@@ -1,8 +1,11 @@
-<div align="center" justify-content="space-between">
-  <!-- <img width= '30' src="public/satellite.svg" />  -->
-  <h1>Pokedex
- </h1>
-</div>
+<h1 align="center">
+    <img align="center" width='30' src="./public/pokemon-icon.svg"> Pokedex
+</h1>
+
+
+ [API](##-API-(Back-end)) | [WEB](##-WEB-(Front-end)) | [MOBILE](##-MOBILE-(App))
+ 
+</h3>
 
 # React + Vite
 
