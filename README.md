@@ -3,10 +3,6 @@
 </h1>
 
 
- [API](##-API-(Back-end)) | [WEB](##-WEB-(Front-end)) | [MOBILE](##-MOBILE-(App))
- 
-</h3>
-
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
