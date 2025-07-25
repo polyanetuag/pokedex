@@ -30,6 +30,10 @@ $ git clone https://github.com/polyanetuag/pokedex.git
 # Entrar na pasta server
 $ cd pokedex
 
+# Instalar as dependências
+$ yarn
 
+# Iniciar o servidor
+$ yarn dev
 
 ```
