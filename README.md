@@ -19,3 +19,17 @@ Este projeto é uma Pokedex desenvolvida em React, onde é possível visualizar 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+
+---
+## 📦 Como instalar e iniciar o projeto
+
+```bash
+# Clonar o repositório
+$ git clone https://github.com/polyanetuag/pokedex.git
+
+# Entrar na pasta server
+$ cd pokedex
+
+
+
+```
