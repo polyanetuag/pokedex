@@ -39,3 +39,5 @@ $ yarn
 $ yarn dev
 
 ```
+
+Desenvolvido com 💜 por Polyane Tuag
