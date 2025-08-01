@@ -40,4 +40,6 @@ $ yarn dev
 
 ```
 
+📋 Licença
+
 Desenvolvido com 💜 por Polyane Tuag
