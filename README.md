@@ -40,6 +40,10 @@ $ yarn dev
 
 ```
 
-📋 Licença
+### 📋 Licença
 
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) para mais detalhes.
+
+
+---
 Desenvolvido com 💜 por Polyane Tuag
