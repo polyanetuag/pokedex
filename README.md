@@ -17,7 +17,7 @@ Este projeto é uma **Pokédex** desenvolvida em *React*, em que é possível vi
 A aplicação utiliza a API do PokéAPI para buscar os dados dos pokémons e exibi-los de forma divertida, organizada e acessível.
 
 ## 🚀 Tecnologias Utilizadas
-- [Javascript]
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
