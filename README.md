@@ -14,7 +14,7 @@
 
 Este projeto é uma **Pokédex** desenvolvida em *React*, em que é possível visualizar as informações sobre diversos pokémons, incluindo suas habilidades, tipos e estatísticas de combate.
 
-A aplicação utiliza a API do [PokéAPI](https://pokeapi.co) para buscar os dados dos pokémons e exibi-los de forma divertida, organizada e acessível.
+A aplicação utiliza a API do [PokéAPI](https://pokeapi.co) para buscar os dados dos pokémons e exibi-los de forma divertida e organizada.
 
 ## 🚀 Tecnologias Utilizadas
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
