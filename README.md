@@ -43,7 +43,7 @@ $ yarn dev ou npm run dev
 
 ### 📋 Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) para mais detalhes.
+Esse projeto está sob a licença [MIT](https://opensource.org/license/mit). Veja o arquivo [LICENSE](https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) para mais detalhes.
 
 
 ---
