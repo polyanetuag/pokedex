@@ -10,7 +10,7 @@
 </div>
 
 
-## 📝 Sobre
+## 📝 About
 
 Este projeto é uma **Pokédex** desenvolvida em *React*, em que é possível visualizar as informações sobre diversos pokémons, incluindo suas habilidades, tipos e estatísticas de combate.
 
@@ -24,7 +24,7 @@ A aplicação utiliza a api da [PokéAPI](https://pokeapi.co) para buscar os dad
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ---
-## 📦 Como instalar e iniciar o projeto
+## 📦 How to install and start the project
 
 ```bash
 # Clonar o repositório
@@ -41,7 +41,7 @@ $ yarn dev ou npm run dev
 
 ```
 
-### 📋 Licença
+### 📋 License
 
 Esse projeto está sob a licença [MIT](https://opensource.org/license/mit). Veja o arquivo [LICENSE](https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) para mais detalhes.
 
