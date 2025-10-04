@@ -27,7 +27,7 @@ The application uses the [PokéAPI](https://pokeapi.co) API to retrieve Pokémon
 ## 📦 How to install and start the project
 
 ```bash
-# Clonar o repositório
+# Clone the repository
 $ git clone https://github.com/polyanetuag/pokedex.git
 
 # Entrar na pasta server
