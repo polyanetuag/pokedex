@@ -36,7 +36,7 @@ $ cd pokedex
 # Install the dependencies
 $ yarn ou npm install
 
-# Iniciar o servidor
+# Start the server
 $ yarn dev ou npm run dev
 
 ```
