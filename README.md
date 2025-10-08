@@ -47,4 +47,4 @@ This project is licensed under the [MIT](https://opensource.org/license/mit). Se
 
 
 ---
-Desenvolvido com 💜 por Polyane Tuag
+Developed with 💜 by Polyane Tuag
