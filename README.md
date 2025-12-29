@@ -14,7 +14,7 @@
 
 This project is a **Pokédex** developed in *React*, where you can view information about various Pokémon, including their abilities, types and combat statistics.
 
-The application uses the [PokéAPI](https://pokeapi.co) api to retrieve Pokémon data and display it in a fun and organized way.
+The application uses the [PokéAPI](https://pokeapi.co) to retrieve Pokémon data and display it in a fun and organized way.
 
 ## 🚀 Technologies Used
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
