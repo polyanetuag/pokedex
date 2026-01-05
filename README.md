@@ -24,7 +24,7 @@ The application uses the [PokéAPI](https://pokeapi.co) to retrieve Pokémon dat
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ---
-## 📦 How to install and started
+## 📦 How to install and start
 
 ```bash
 # Clone the repository
