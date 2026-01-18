@@ -23,7 +23,6 @@ The application uses the [PokéAPI](https://pokeapi.co) to retrieve Pokémon dat
 - [Vite](https://vitejs.dev/)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
----
 ## 📦 How to install and start
 
 ```bash
