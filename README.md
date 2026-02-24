@@ -40,7 +40,7 @@ $ yarn dev ou npm run dev
 
 ```
 
-### 📋 License
+## 📋 License
 
 This project is licensed under the *MIT*. 
 
