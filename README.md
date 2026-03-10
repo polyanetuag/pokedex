@@ -42,9 +42,7 @@ $ yarn dev *or* npm run dev
 
 ## 📋 License
 
-This project is licensed under the [MIT](https://opensource.org/license/mit). 
-
-See the [LICENSE](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) file for more details.
+This project is licensed under the [MIT](https://opensource.org/license/mit). See the [LICENSE](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) file for more details.
 
 
 ---
